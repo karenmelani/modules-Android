@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActivityItemListItemName">
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="ActivityItemListDate" parent="ActivityItemListItemName">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+    </style>
+
+    <style name="ActivityItemListGroupHeader" parent="ActivityItemListItemName">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:background">@color/ui_view_secondary_background</item>
+        <item name="customFont">PayPalSmallMedium</item>
+    </style>
+
+    <style name="ActivityItemListItemType">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="ActivityItemListItemAmount">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="ActivityItemListSimilarItemDate">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="ActivityItemListSimilarItemType">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="ActivityItemListFilterButton">
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="ActivityItemListFilterButton.Applied" parent="ActivityItemListFilterButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:drawableRight">@drawable/icon_close_white_small</item>
+        <item name="android:drawablePadding">@dimen/padding_small</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/oval_button_blue</item>
+    </style>
+
+    <style name="ActivityItemListFilterButton.RadioButton" parent="ActivityItemListFilterButton">
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:paddingRight">@dimen/padding_medium</item>
+        <item name="android:textColor">@color/radio_button_black_color_selector</item>
+        <item name="android:background">@drawable/radio_button_states_black_border</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:button">@android:color/transparent</item>
+    </style>
+
+    <style name="ActivityItemListFilterButton.RadioButton.All" parent="ActivityItemListFilterButton.RadioButton">
+        <item name="android:text">@string/activity_item_list_filter_all</item>
+        <item name="android:checked">true</item>
+    </style>
+
+    <style name="ActivityItemListFilterButton.RadioButton.MoneyIn" parent="ActivityItemListFilterButton.RadioButton">
+        <item name="android:text">@string/activity_item_list_filter_money_in</item>
+    </style>
+
+    <style name="ActivityItemListFilterButton.RadioButton.MoneyOut" parent="ActivityItemListFilterButton.RadioButton">
+        <item name="android:text">@string/activity_item_list_filter_money_out</item>
+    </style>
+
+    <style name="ActivityItemsListMessageHeader">
+        <item name="android:gravity">center</item>
+        <item name="customFont">PayPalBigRegular</item>
+        <item name="android:textSize">@dimen/text_size_h3</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+    </style>
+
+    <style name="ActivityItemsListMessage">
+        <item name="android:gravity">center</item>
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+    </style>
+
+    <style name="ActivityItemsListErrorImage">
+        <item name="android:src">@drawable/icon_error_large_black</item>
+    </style>
+
+    <style name="ActivityItemsListTryAgainButton">
+        <item name="android:text">@string/activity_items_list_try_again</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:paddingLeft">@dimen/padding_large</item>
+        <item name="android:paddingRight">@dimen/padding_large</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="customFont">PayPalBigRegular</item>
+        <item name="android:background">@drawable/oval_button_grey</item>
+    </style>
+
+    <style name="ActivityItemsListProgressMessage">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="ActivityItemDetailsDisplayPicAndContactInfo">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="StyleForActivityItemDetails">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="StyleForActivityItemDetails.Secondary" parent="StyleForActivityItemDetails">
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+    </style>
+
+    <style name="SectionHeader">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+    </style>
+
+    <style name="StyleForActivityItemDetails.Summary" parent="StyleForActivityItemDetails">
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="DescriptionText">
+        <item name="android:textSize">@dimen/text_size_h3</item>
+        <item name="customFont">PayPalBigRegular</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StyleForActivityItemDetails.Summary.Line3" parent="StyleForActivityItemDetails.Summary">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="FundingSourceLayout" parent="SectionHeader">
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+    </style>
+
+    <style name="ActivityItemTextSize">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="FundingSourceAmount">
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="TransactionInfo">
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ActivityItemInfo">
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+    </style>
+
+    <style name="ViewSimilarPaymentsHeader">
+        <item name="customFont">PayPalSmallMedium</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+    </style>
+
+    <style name="CircleImagePadding">
+        <item name="android:padding">@dimen/activity_item_details_padding_medium</item>
+    </style>
+
+    <style name="ActivityItemDetailsCircleImageWithShadow">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/padding_xsmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="customFont">PayPalBigLight</item>
+    </style>
+
+    <style name="ActivityItemDetailsTransactionLayout">
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ActivityItemDetailsNoDataFoundText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+    </style>
+
+    <style name="FilterOptionText">
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+    </style>
+
+    <style name="SelectedFilterOptionText">
+        <item name="customFont">PayPalSmallMedium</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SubSectionTitle">
+        <item name="customFont">PayPalBigLight</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+        <item name="android:layout_marginStart">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_large</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+    </style>
+
+    <style name="CustomRecyclerView.Filters" parent="CustomRecyclerView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="BottomSheetDialogAnimation" parent="@android:style/Theme.Panel">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PurchaseItemsAmountInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+    </style>
+
+    <style name="PurchaseItemDescription">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <style name="PurchaseItemHeader">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="customFont">PayPalSmallLight</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+    </style>
+
+    <style name="CompleteAction">
+        <item name="customFont">PayPalBigRegular</item>
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+    </style>
+
+    <style name="BottomSheetListItemIcon">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:padding">@dimen/margin_medium</item>
+    </style>
+
+    <style name="ActionButtonMoneyRequest">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="customFont">PayPalBigRegular</item>
+    </style>
+    <style name="ActivityWebViewForPoolLink">
+        <item name="android:textColor">@color/ui_text_link_primary</item>
+        <item name="android:textColorLink">@color/ui_text_link_primary</item>
+    </style>
+
+    <style name="CustomRecyclerView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="ActivityAppBarDate">
+        <item name="customFont">PayPalBigRegular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+    </style>
+
+    <style name="ActivityAppBarTimeStamp" parent="ActivityAppBarDate">
+        <item name="customFont">PayPalBigLight</item>
+    </style>
+
+    <style name="LayoutGravityCenter">
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ActivityDetailsUrlLink">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:lineSpacingMultiplier">@dimen/line_spacing_multiplier_primary</item>
+        <item name="android:textColor">@color/text_link_color_blue</item>
+        <item name="android:textColorLink">@color/text_link_color_blue</item>
+    </style>
+
+    <style name="EtaItemStateText">
+        <item name="android:textColor">@color/ui_label_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:lineSpacingExtra">@dimen/text_size_h2</item>
+    </style>
+
+    <style name="EtaItemTimeText">
+        <item name="android:textColor">@color/ui_label_text_secondary</item>
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="customFont">PayPalSmallRegular</item>
+        <item name="android:lineSpacingExtra">@dimen/text_size_header</item>
+    </style>
+</resources>

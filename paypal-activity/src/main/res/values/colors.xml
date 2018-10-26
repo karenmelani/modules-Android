@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">@android:color/transparent</color>
+
+    <!-- Contact bubble -->
+    <color name="a_f_group">#66C4EB</color>
+    <color name="g_l_group">#FFC066</color>
+    <color name="m_r_group">#A268B7</color>
+    <color name="s_z_group">#66E2BE</color>
+
+    <color name="full_login_background_end_color">@color/white</color>
+    <color name="full_login_background_start_color">#FFEEF2F5</color>
+
+    <color name="eta_line">#299976</color>
+    <color name="eta_pending_status_circle_and_line">#C6C4C4</color>
+</resources>
