@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_items_list_empty">Quickly find all your payment information, respond to payments requests, send someone payments again, and more</string>
+    <string name="activity_items_list_empty_filter">No transaction was found in %1$s.</string>
+    <string name="activity_items_list_error">We\'re sorry, something seems to have gone wrong. Please try again in a moment.</string>
+    <string name="activity_items_list_error_header">We can\'t load this page</string>
+    <string name="activity_items_list_try_again">Please try again</string>
+    <string name="activity_item_list_filter_money_in">Payments In</string>
+    <string name="activity_item_list_filter_money_out">Payments Out</string>
+    <string name="activity_items_list_progress_message">Loading transactions…</string>
+    <string name="you_paid_amount_credit">You paid a %2$s fee.</string>
+    <string name="display_amount">%1$s %2$s</string>
+    <string name="transaction_id">Transaction ID: </string>
+    <string name="money_sent">Payment sent</string>
+    <string name="money_received">Payment received</string>
+    <string name="activity_item_filter_title">Filter by Date</string>
+    <string name="predefined_date_filter_no_filter">No filter</string>
+    <string name="predefined_date_filter_last_three_years">the last 3 years</string>
+    <string name="transaction_timestamp">Time of transaction: %1$s</string>
+    <string name="similar_payments">See other transactions</string>
+    <string name="discount_amount">%1$s %2$s</string>
+    <string name="complete_action_using">Contact using</string>
+    <string name="item_with_quantity_more">%1$s (Qty: %2$s)</string>
+    <string name="send_again">Send payments</string>
+    <string name="request_credit">You requested %2$s  from %1$s</string>
+    <string name="request_cancel">The request for %2$s has been canceled</string>
+    <string name="invoice_received">%1$s sent you an invoice for %2$s</string>
+    <string name="transfer_to_paypal_balance">You\'ve transferred %2$s to your %1$s balance</string>
+    <string name="transfer_to_bank">You\'ve withdrawn %2$s to %1$s</string>
+    <string name="refund_received">You were refunded %2$s by %1$s</string>
+    <string name="requester_message">We\'ll email %1$s to let them know the request has been canceled</string>
+    <string name="requestee_message">We\'ll email %1$s to let them know you declined the payment request</string>
+    <string name="invoice_manage_text">You can manage your invoices on our</string>
+    <string name="echeck_goods_and_service_debit">We advise merchants not to ship until they receive the payment.</string>
+    <string name="echeck_goods_and_service_credit">Do not ship items until you receive the payment.</string>
+    <string name="say_thanks_completed_persistent">We\'ve sent your thank you note.</string>
+    <string name="cross_currency_cancel_dialog_result_message">Payment canceled</string>
+</resources>
